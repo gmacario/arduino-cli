@@ -1220,6 +1220,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#json-schema" class="md-nav__link">
+    JSON schema
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1537,6 +1544,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#json-schema" class="md-nav__link">
+    JSON schema
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1617,6 +1631,14 @@
 <li><code>enable_notification</code> - set to <code>false</code> to disable notifications of new Arduino CLI releases, defaults to <code>true</code></li>
 </ul>
 </li>
+<li><code>build_cache</code> configuration options related to the compilation cache<ul>
+<li><code>compilations_before_purge</code> - interval, in number of compilations, at which the cache is purged, defaults to <code>10</code>.
+  When <code>0</code> the cache is never purged.</li>
+<li><code>ttl</code> - cache expiration time of build folders. If the cache is hit by a compilation the corresponding build files
+  lifetime is renewed. The value format must be a valid input for
+  <a href="https://pkg.go.dev/time#ParseDuration">time.ParseDuration()</a>, defaults to <code>720h</code> (30 days).</li>
+</ul>
+</li>
 </ul>
 <h2 id="configuration-methods">Configuration methods<a class="headerlink" href="#configuration-methods" title="Permanent link">&para;</a></h2>
 <p>Arduino CLI may be configured in three ways:</p>
@@ -1668,8 +1690,6 @@ configuration settings.</p>
 <p>Configuration files in the following locations are recognized by Arduino CLI:</p>
 <ol>
 <li>Location specified by the <a href="../commands/arduino-cli/"><code>--config-file</code></a> command line flag</li>
-<li>Current working directory</li>
-<li>Any parent directory of the current working directory (more immediate parents having higher precedence)</li>
 <li>Arduino CLI data directory (as configured by <code>directories.data</code>)</li>
 </ol>
 <p>If multiple configuration files are present, the one highest on the above list is used. Configuration files are not
@@ -1687,6 +1707,9 @@ combined.</p>
 <div class="highlight"><pre><span></span><code><span class="k">[board_manager]</span><span class="w"></span>
 <span class="n">additional_urls</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="w"> </span><span class="s">&quot;https://downloads.arduino.cc/packages/package_staging_index.json&quot;</span><span class="w"> </span><span class="p">]</span><span class="w"></span>
 </code></pre></div>
+<h4 id="json-schema">JSON schema<a class="headerlink" href="#json-schema" title="Permanent link">&para;</a></h4>
+<p>The configuration file <a href="../configuration.schema.json">JSON schema</a> can be used to independently validate the file content. This
+schema should be considered unstable in this version.</p>
                 
               
               

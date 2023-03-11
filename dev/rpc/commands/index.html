@@ -1303,6 +1303,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#failedinstanceiniterror" class="md-nav__link">
+    FailedInstanceInitError
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#initrequest" class="md-nav__link">
     InitRequest
   </a>
@@ -1394,6 +1401,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#failedinstanceinitreason" class="md-nav__link">
+    FailedInstanceInitReason
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#arduinocoreservice" class="md-nav__link">
     ArduinoCoreService
   </a>
@@ -1402,13 +1416,6 @@
         
       </ul>
     </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#bootstrap-commands" class="md-nav__link">
-    BOOTSTRAP COMMANDS
-  </a>
   
 </li>
       
@@ -1603,6 +1610,13 @@
           <li class="md-nav__item">
   <a href="#platformlistresponse" class="md-nav__link">
     PlatformListResponse
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#platformloadingerror" class="md-nav__link">
+    PlatformLoadingError
   </a>
   
 </li>
@@ -2605,6 +2619,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#failedinstanceiniterror" class="md-nav__link">
+    FailedInstanceInitError
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#initrequest" class="md-nav__link">
     InitRequest
   </a>
@@ -2696,6 +2717,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#failedinstanceinitreason" class="md-nav__link">
+    FailedInstanceInitReason
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#arduinocoreservice" class="md-nav__link">
     ArduinoCoreService
   </a>
@@ -2704,13 +2732,6 @@
         
       </ul>
     </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#bootstrap-commands" class="md-nav__link">
-    BOOTSTRAP COMMANDS
-  </a>
   
 </li>
       
@@ -2905,6 +2926,13 @@
           <li class="md-nav__item">
   <a href="#platformlistresponse" class="md-nav__link">
     PlatformListResponse
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#platformloadingerror" class="md-nav__link">
+    PlatformLoadingError
   </a>
   
 </li>
@@ -3475,6 +3503,7 @@
 <li><a href="#cc.arduino.cli.commands.v1.CreateResponse">CreateResponse</a></li>
 <li><a href="#cc.arduino.cli.commands.v1.DestroyRequest">DestroyRequest</a></li>
 <li><a href="#cc.arduino.cli.commands.v1.DestroyResponse">DestroyResponse</a></li>
+<li><a href="#cc.arduino.cli.commands.v1.FailedInstanceInitError">FailedInstanceInitError</a></li>
 <li><a href="#cc.arduino.cli.commands.v1.InitRequest">InitRequest</a></li>
 <li><a href="#cc.arduino.cli.commands.v1.InitResponse">InitResponse</a></li>
 <li><a href="#cc.arduino.cli.commands.v1.InitResponse.Progress">InitResponse.Progress</a></li>
@@ -3488,6 +3517,9 @@
 <li><a href="#cc.arduino.cli.commands.v1.UpdateLibrariesIndexResponse">UpdateLibrariesIndexResponse</a></li>
 <li><a href="#cc.arduino.cli.commands.v1.VersionRequest">VersionRequest</a></li>
 <li><a href="#cc.arduino.cli.commands.v1.VersionResponse">VersionResponse</a></li>
+</ul>
+<ul>
+<li><a href="#cc.arduino.cli.commands.v1.FailedInstanceInitReason">FailedInstanceInitReason</a></li>
 </ul>
 <ul>
 <li><a href="#cc.arduino.cli.commands.v1.ArduinoCoreService">ArduinoCoreService</a></li>
@@ -3525,6 +3557,7 @@
 <li><a href="#cc.arduino.cli.commands.v1.PlatformInstallResponse">PlatformInstallResponse</a></li>
 <li><a href="#cc.arduino.cli.commands.v1.PlatformListRequest">PlatformListRequest</a></li>
 <li><a href="#cc.arduino.cli.commands.v1.PlatformListResponse">PlatformListResponse</a></li>
+<li><a href="#cc.arduino.cli.commands.v1.PlatformLoadingError">PlatformLoadingError</a></li>
 <li><a href="#cc.arduino.cli.commands.v1.PlatformSearchRequest">PlatformSearchRequest</a></li>
 <li><a href="#cc.arduino.cli.commands.v1.PlatformSearchResponse">PlatformSearchResponse</a></li>
 <li><a href="#cc.arduino.cli.commands.v1.PlatformUninstallRequest">PlatformUninstallRequest</a></li>
@@ -3898,6 +3931,12 @@
 <td><a href="#int64">int64</a></td>
 <td></td>
 <td>Search for boards for the given time (in milliseconds)</td>
+</tr>
+<tr>
+<td>fqbn</td>
+<td><a href="#string">string</a></td>
+<td></td>
+<td>The fully qualified board name of the board you want information about (e.g., <code>arduino:avr:uno</code>).</td>
 </tr>
 </tbody>
 </table>
@@ -4417,6 +4456,32 @@
 </table>
 <p><a name="cc.arduino.cli.commands.v1.DestroyResponse"></a></p>
 <h3 id="destroyresponse">DestroyResponse<a class="headerlink" href="#destroyresponse" title="Permanent link">&para;</a></h3>
+<p><a name="cc.arduino.cli.commands.v1.FailedInstanceInitError"></a></p>
+<h3 id="failedinstanceiniterror">FailedInstanceInitError<a class="headerlink" href="#failedinstanceiniterror" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Label</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>reason</td>
+<td><a href="#cc.arduino.cli.commands.v1.FailedInstanceInitReason">FailedInstanceInitReason</a></td>
+<td></td>
+<td>specific cause of the error</td>
+</tr>
+<tr>
+<td>message</td>
+<td><a href="#string">string</a></td>
+<td></td>
+<td>explanation of the error</td>
+</tr>
+</tbody>
+</table>
 <p><a name="cc.arduino.cli.commands.v1.InitRequest"></a></p>
 <h3 id="initrequest">InitRequest<a class="headerlink" href="#initrequest" title="Permanent link">&para;</a></h3>
 <table>
@@ -4743,10 +4808,42 @@
 </tr>
 </tbody>
 </table>
+<p><a name="cc.arduino.cli.commands.v1.FailedInstanceInitReason"></a></p>
+<h3 id="failedinstanceinitreason">FailedInstanceInitReason<a class="headerlink" href="#failedinstanceinitreason" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Number</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FAILED_INSTANCE_INIT_REASON_UNSPECIFIED</td>
+<td>0</td>
+<td>FAILED_INSTANCE_INIT_REASON_UNSPECIFIED the error reason is not specialized</td>
+</tr>
+<tr>
+<td>FAILED_INSTANCE_INIT_REASON_INVALID_INDEX_URL</td>
+<td>1</td>
+<td>INVALID_INDEX_URL a package index url is malformed</td>
+</tr>
+<tr>
+<td>FAILED_INSTANCE_INIT_REASON_INDEX_LOAD_ERROR</td>
+<td>2</td>
+<td>FAILED_INSTANCE_INIT_REASON_INDEX_LOAD_ERROR failure encountered while loading an index</td>
+</tr>
+<tr>
+<td>FAILED_INSTANCE_INIT_REASON_TOOL_LOAD_ERROR</td>
+<td>3</td>
+<td>FAILED_INSTANCE_INIT_REASON_TOOL_LOAD_ERROR failure encountered while loading a tool</td>
+</tr>
+</tbody>
+</table>
 <p><a name="cc.arduino.cli.commands.v1.ArduinoCoreService"></a></p>
 <h3 id="arduinocoreservice">ArduinoCoreService<a class="headerlink" href="#arduinocoreservice" title="Permanent link">&para;</a></h3>
 <p>The main Arduino Platform service API</p>
-<h2 id="bootstrap-commands">BOOTSTRAP COMMANDS<a class="headerlink" href="#bootstrap-commands" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
 <tr>
@@ -5425,7 +5522,7 @@
 <td>show_properties</td>
 <td><a href="#bool">bool</a></td>
 <td></td>
-<td>Show all build preferences used instead of compiling.</td>
+<td>Just get the build properties and do not run the full compile.</td>
 </tr>
 <tr>
 <td>preprocess</td>
@@ -5640,6 +5737,12 @@
 <td><a href="#cc.arduino.cli.commands.v1.TaskProgress">TaskProgress</a></td>
 <td></td>
 <td>Completions reports of the compilation process (stream)</td>
+</tr>
+<tr>
+<td>build_properties</td>
+<td><a href="#string">string</a></td>
+<td>repeated</td>
+<td>Build properties used for compiling</td>
 </tr>
 </tbody>
 </table>
@@ -5868,6 +5971,8 @@
 </tr>
 </tbody>
 </table>
+<p><a name="cc.arduino.cli.commands.v1.PlatformLoadingError"></a></p>
+<h3 id="platformloadingerror">PlatformLoadingError<a class="headerlink" href="#platformloadingerror" title="Permanent link">&para;</a></h3>
 <p><a name="cc.arduino.cli.commands.v1.PlatformSearchRequest"></a></p>
 <h3 id="platformsearchrequest">PlatformSearchRequest<a class="headerlink" href="#platformsearchrequest" title="Permanent link">&para;</a></h3>
 <table>
@@ -7477,6 +7582,12 @@
 <td><a href="#cc.arduino.cli.commands.v1.Port.PropertiesEntry">Port.PropertiesEntry</a></td>
 <td>repeated</td>
 <td>A set of properties of the port</td>
+</tr>
+<tr>
+<td>hardware_id</td>
+<td><a href="#string">string</a></td>
+<td></td>
+<td>The hardware ID (serial number) of the board attached to the port</td>
 </tr>
 </tbody>
 </table>

@@ -5567,12 +5567,6 @@
 <td>Suppresses almost every output.</td>
 </tr>
 <tr>
-<td>vid_pid</td>
-<td><a href="#string">string</a></td>
-<td></td>
-<td>VID/PID specific build properties.</td>
-</tr>
-<tr>
 <td>jobs</td>
 <td><a href="#int32">int32</a></td>
 <td></td>
@@ -6907,6 +6901,12 @@
 <td></td>
 <td>The search query.</td>
 </tr>
+<tr>
+<td>omit_releases_details</td>
+<td><a href="#bool">bool</a></td>
+<td></td>
+<td>Set to true to not populate the releases field in the response (may save a lot of bandwidth/CPU).</td>
+</tr>
 </tbody>
 </table>
 <p><a name="cc.arduino.cli.commands.v1.LibrarySearchResponse"></a></p>
@@ -7120,6 +7120,12 @@
 <td><a href="#cc.arduino.cli.commands.v1.LibraryRelease">LibraryRelease</a></td>
 <td></td>
 <td>The index data for the latest version of the library.</td>
+</tr>
+<tr>
+<td>available_versions</td>
+<td><a href="#string">string</a></td>
+<td>repeated</td>
+<td>The available versions of this library.</td>
 </tr>
 </tbody>
 </table>
